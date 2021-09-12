@@ -3,8 +3,9 @@
 
 int main()
 {
-	int x, y, p, z, resultado, resultado2; 
-	
+	int x, y, p, i, z, resultado, resultado2; 
+	do
+	{
 	printf("Dame el primer numero entero: ");
 	scanf("%d", &x);
 	
@@ -19,19 +20,19 @@ int main()
 	{
 		case 1:
 			resultado = x + y;
-			printf("El resultado de tu suma es: %d", resultado);
+			printf("El resultado de tu suma es: %d\n", resultado);
 			break;
 		case 2:
 			resultado = x - y;
-			printf("El resultado de tu resta es: %d", resultado);
+			printf("El resultado de tu resta es: %d\n", resultado);
 			break;
 		case 3:
 			resultado = x * y;
-			printf("El resultado de tu multiplicacion es: %d", resultado);
+			printf("El resultado de tu multiplicacion es: %d\n", resultado);
 			break;
 		case 4:
 			resultado = x / y;
-			printf("El resultado de tu division es: %d", resultado);
+			printf("El resultado de tu division es: %d\n", resultado);
 			break;
 		case 5:
 			printf("A que potencia quieres elevar los numeros: ");
@@ -45,7 +46,7 @@ int main()
 			break;
 		case 6:
 			resultado = x % y;
-			printf("El resultado de tu modulo es: %d", resultado);
+			printf("El resultado de tu modulo es: %d\n", resultado);
 			break;
 		case 7:
 			resultado = sqrt(x);
@@ -57,5 +58,11 @@ int main()
 			
 	}
 	
+		printf("Gusta realizar otra operacion? SI(1), NO(0)");
+		scanf("%d", &i);
+		
+	}while(i==1);	
+	
 	return(0);
 }
+	
